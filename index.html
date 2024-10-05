@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="headerLeft">
+                <div class="logo">
+                    <img src="https://www.svgrepo.com/show/165211/book.svg" alt="Books Logo">
+                </div>
+                <div class="title">
+                    <h id="HeaderTitle">Library</h>
+                </div>
+            </div>
+            <div class="headerRight">
+                <div class="bookCounterLogo">
+                    <img src="https://www.svgrepo.com/show/442866/book.svg" alt="Counter Logo">
+                </div>
+                <div class="bookCounter">
+                    <h><span id="bookCounter">0</span>Books</h>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="upperContent">
+                <div class="button">
+                    <button id="addBook">+ Book</button>
+                </div>
+            </div>
+            <div class="lowerContent">
+                <div class="gridBooks"></div>
+            </div>
+        </div>
+    </div>
+    <dialog id="myDialog">
+        <div class="dialog">
+            <form action="" method="post" id="formDialog" autocomplete="off">
+                <img id="resetForm" src="https://www.svgrepo.com/show/343263/reset.svg" alt="reset button">
+                <label for="bookTitle">Title</label>
+                <input type="text" name="bookTitle" id="bookTitle" placeholder="Title" required>
+                <label for="bookAuthor" >Author</label>
+                <input type="text" name="bookAuthor" id="bookAuthor" placeholder="Author" required>
+                <label for="bookPages">Pages</label>
+                <input type="number" name="bookPages" id="bookPages" placeholder="Pages" required>
+                <label for="bookYear">Year</label>
+                <input type="number" name="bookyear" id="bookYear" placeholder="Year" required>
+                <div class="status">
+                    <label for="bookStatus">Have you read it?</label>
+                    <p>Read?</p>
+                    <input type="checkbox" name="bookStatus" id="bookStatus" placeholder="Title">
+                </div>
+                <button type="submit" id="submitForm">Submit</button>
+                <button class="closeForm" type="button">close</button>
+            </form>
+    
+        </div>
+
+    
+    </dialog>
+</body>
+</html>

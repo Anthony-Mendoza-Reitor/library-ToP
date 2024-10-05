@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    height: 25px;
+    width: 25px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 28px;
+    text-shadow: 1px 1px black;
+    background-color: rgb(167, 134, 134);
+    margin-bottom: 10px;
+}
+.headerRight, .headerLeft{
+    display: flex;
+}
+.bookCounter{
+    padding-left: 10px;
+}
+#bookCounter{
+    margin-right: 4px;
+}
+.button > *{
+    color: white;
+    font-size: 12px;
+    text-shadow: 1px 1px black;
+    background-color: rgb(167, 134, 134);
+    border-radius: 200px;
+    border-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+.content{
+    margin-left: 10px;
+}
+.gridBooks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.gridBooks > div{
+    border-style: ridge;
+    margin: 4px;
+    box-shadow: 1px 1px #d8d5d0, -0.1em 0 .4em #523211;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/grungy-front-book-cover-3.jpg");
+    background-size: 250px 380px;
+    background-repeat: no-repeat;
+    padding: 25px;
+    width: 200px;
+}   
+.gridBooks > div > h2, h4, p{
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+.gridBooks > div > button {
+    color: white;
+    width: max-content;
+    font-size: 12px;
+    text-shadow: 1px 1px black;
+    background-color: rgb(167, 134, 134);
+    border-radius: 200px;
+    border-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 4px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.status{
+    display: flex;
+}
