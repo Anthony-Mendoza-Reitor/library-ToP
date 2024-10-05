@@ -9,6 +9,7 @@ img {
 .container{
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 .header{
     display: flex;
@@ -59,7 +60,7 @@ img {
     justify-content: center;
     align-items: center;
     background-image: url("https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/grungy-front-book-cover-3.jpg");
-    background-size: 250px 380px;
+    background-size: 250px 420px;
     background-repeat: no-repeat;
     padding: 25px;
     width: 200px;
@@ -86,7 +87,58 @@ img {
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+#resetForm {
+    position: relative;
+    left: 90px;
+    bottom: 10px;
+}
+label {
+    font-style: italic;
+    padding-top: 10px;
+}
+::placeholder {
+    color: brown;
+}
+input:valid{
+    border-color: brown;
+}
+input:invalid{
+    border-color: rgb(123, 161, 231);
 }
 .status{
+    padding-top: 10px;
+}
+.status > div {
     display: flex;
+    justify-content: center;
+    padding-right: 4px;
+}
+.status > div > p {
+    text-shadow: none;
+    color: black;
+}
+.formButtons > button {
+    color: white;
+    font-size: 12px;
+    text-shadow: 1px 1px black;
+    background-color: rgb(167, 134, 134);
+    border-radius: 200px;
+    border-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 210, 210);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px white;
+    font-style: italic;
+    margin-top: auto;
 }

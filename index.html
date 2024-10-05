@@ -37,6 +37,13 @@
                 <div class="gridBooks"></div>
             </div>
         </div>
+        <div class="footer">
+            <div class="footerContent">
+                <h>Copyright © 2024</h>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAn1BMVEVHcEzn5+fk5OTjtG3js2rjtGzm0Kvg4eHc3Nzsypbjs2vluXbjsWfm5ubm6ezir2Ti4uLlyaHep1Xh4eHbok3g4ODitGzl5eXaoU3R0dHisWjl5eXl5eXisWfm5ubo6OjW1tbir2LPz8/w3Mju2cThqVjk5OPk39rpyJ7v2L/boUvs7e3n3NHi1MPq0bSIg36oknafeDvFqYZtbW3Qt5fnnTmlAAAAHXRSTlMAJ89400kT/v4IoySSsDdf4jK2UN1x8oXG5vlKXhkJIcAAAAERSURBVCiRbdDZdoMgEAZg4gammuRkb9pBEPC4Z2nf/9mKmmMR/S8U+JwBQUgnRLP8L3mRxeF6PY5dgMi0CMAfJx8AYFg3NVoNGGxd1w979Ixv9xyQ70Efzw+Am7tslXoTwA08pXwDg1KBEVVOzn4sTSz30z87Gsav9pXoNc6Hx802BDxvcw55kfPzHNvX81EU4i7yGW5a8Xr+CikfomgCCy9YCiHrWmrH3xY6pJZNwljWFDWOLcxImqXVz73SL4Kn9oU1MlpVlFGNqwmeMGOYUR2W6dFhWqoLCemQ6B47a89TmvSFFBOaWoUIMTogZcmnbSgekV5muMnIgPZZ32ca0FkghFZOZ7F9sWPrnbPUcjl/aO4iHDIRqlQAAAAASUVORK5CYII=">
+                <h>Anthony Mendoza Reitor</h>
+            </div>
+        </div>
     </div>
     <dialog id="myDialog">
         <div class="dialog">
@@ -47,16 +54,20 @@
                 <label for="bookAuthor" >Author</label>
                 <input type="text" name="bookAuthor" id="bookAuthor" placeholder="Author" required>
                 <label for="bookPages">Pages</label>
-                <input type="number" name="bookPages" id="bookPages" placeholder="Pages" required>
+                <input type="number" min="1" max="10,001" name="bookPages" id="bookPages" placeholder="Pages" required>
                 <label for="bookYear">Year</label>
-                <input type="number" name="bookyear" id="bookYear" placeholder="Year" required>
+                <input type="number" min="1" max="2024" name="bookyear" id="bookYear" placeholder="Year" required>
                 <div class="status">
                     <label for="bookStatus">Have you read it?</label>
-                    <p>Read?</p>
-                    <input type="checkbox" name="bookStatus" id="bookStatus" placeholder="Title">
+                    <div class="checkBox">
+                        <p>Yes</p>
+                        <input type="checkbox" name="bookStatus" id="bookStatus" placeholder="Title">
+                    </div>
                 </div>
-                <button type="submit" id="submitForm">Submit</button>
-                <button class="closeForm" type="button">close</button>
+                <div class="formButtons">
+                    <button type="submit" id="submitForm">Submit</button>
+                    <button class="closeForm" type="button">close</button>
+                </div>
             </form>
     
         </div>
